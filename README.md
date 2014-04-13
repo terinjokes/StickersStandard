@@ -17,20 +17,20 @@ Several implementors have already experimented with various sizes, shapes and du
 
 All diagrams, examples, and notes in this specification are non-normative, as are all sections explicitly marked non-normative. Everything else in this specification is normative.
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in the normative parts of this specification are to be interpreted as described in RFC2119. For readability, these words do not appear in all uppercase letters in this specification. *RFC2119*
+The key words "MUST", "MUST NOT", "REQUIRED", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in the normative parts of this specification are to be interpreted as described in RFC2119. For readability, these words do not appear in all uppercase letters in this specification.
 
 Conformance requirements phrased as algorithms or specific steps may be implemented in any manner, so long as the end result is equivalent.
 
 
 ## Square Sticker ##
 
-A **square sticker** is represented by a square with sides of 2 inches.
+A **square sticker** must be represented by a square with sides of 2 inches.
 
 ### Integration Behavior ###
 
 ## Hexagon Sticker ##
 
-A **hexagon sticker** is represented by a regular hexagon with the largest diagonals measuring 2 inches.
+A **hexagon sticker** must be represented by a regular hexagon with the largest diagonals measuring 2 inches.
 
 ### Integration Behavior ###
 
