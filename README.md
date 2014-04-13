@@ -21,20 +21,19 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHOULD", "SHOULD NOT", "RECOMMEND
 
 Conformance requirements phrased as algorithms or specific steps may be implemented in any manner, so long as the end result is equivalent.
 
-## Model ##
-
-### Square Sticker ###
-
-### Hexagon Sticker ###
 
 ## Square Sticker ##
+
+A **square sticker** is represented by a square with sides of 2 inches.
 
 ### Integration Behavior ###
 
 ## Hexagon Sticker ##
 
+A **hexagon sticker** is represented by a regular hexagon with the largest diagonals measuring 2 inches.
+
 ### Integration Behavior ###
 
 ## Acknowledgments ##
 
-The editor would like to thank Jason Denizac for their contributions to this specification.
+The editor would like to thank Jason Denizac and Max Ogden for their contributions to this specification.
