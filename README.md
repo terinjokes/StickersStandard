@@ -5,7 +5,7 @@
 
 ## Abstract ##
 
-This specification defines a standard interface for sticker compatibility from multiple vendors. By following this specification, implementors can ensure they meet the expectations of sticker consumers, and producers can supply tools that integrates with the web platform to ensure conformance.
+This specification defines a standard interface for sticker compatibility from multiple vendors. By following this specification, implementors can ensure they meet the expectations of sticker consumers, and producers can supply tools that integrate with the web platform.
 
 ## Status ###
 
