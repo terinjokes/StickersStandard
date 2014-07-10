@@ -30,7 +30,7 @@ A **square sticker** must be represented by a square with sides of 2 inches.
 
 ## Hexagon Sticker ##
 
-A **hexagon sticker** must be represented by a regular hexagon with the largest diagonals measuring 2 inches.
+A **hexagon sticker** must be represented by a regular hexagon with the largest diagonals measuring 2 inches. The image should be rotationally oriented such that the desired top of the image is positioned at a vertex.
 
 ### Integration Behavior ###
 
