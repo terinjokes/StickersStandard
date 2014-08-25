@@ -31,6 +31,7 @@ A **square sticker** must be represented by a square with sides of 2 inches.
 ## Hexagon Sticker ##
 
 A **hexagon sticker** must be represented by a regular hexagon with the largest diagonals measuring 2 inches.
+The sticker must be oriented with a vertex positioned at the top.
 
 ### Integration Behavior ###
 
