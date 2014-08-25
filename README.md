@@ -34,13 +34,13 @@ Conformance requirements phrased as algorithms or specific steps may be implemen
 
 ## Square Sticker ##
 
-A **square sticker** must be represented by a square with sides of 2 inches.
+A **square sticker** must be represented by a square with sides of exactly 5.08 centimeters.
 
 ### Integration Behavior ###
 
 ## Hexagon Sticker ##
 
-A **hexagon sticker** must be represented by a regular hexagon with the largest diagonals measuring 2 inches.
+A **hexagon sticker** must be represented by a regular hexagon with the largest diagonals measuring exactly 5.08 centimeters.
 The sticker must be oriented with a vertex positioned at the top.
 
 ### Integration Behavior ###
