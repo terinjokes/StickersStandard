@@ -1,0 +1,33 @@
+<pre class="metadata">
+Title: Stickers Standard
+Group: StickerWG
+H1: Stickers
+Shortname: Stickers
+Status: LS
+Editor: Terin Stock, terin@terinstock.com, https://terinstock.com
+Abstract: This specification defines a standard for sticker compatibility from multiple vendors. 
+Abstract: By following this specification, implementors can ensure they meet the expectations of sticker consumers.
+Abstract: A standard allow producers to supply tools that help ensure maximum compliance and enjoyability.
+!Participate: <a href="https://github.com/terinjokes/StickerConstructorSpec/issues/new">File an issue</a> (<a href="https://github.com/terinjokes/StickerConstructorSpec/issues?state=open">open issues</a>)
+!Version History: <a href="https://github.com/terinjokes/StickerConstructorSpec/commits">https://github.com/terinjokes/StickerConstructorSpec/commits</a>
+</pre>
+
+<h2 id="intro" class="no-num">Introduction</h2>
+
+<em>This section is non-normative.</em>
+
+<h2 id="type">Types of Stickers</h2>
+
+<h3 id="type-square">Square Sticker</h3>
+A <dfn>square sticker</dfn> must be represented by a square with sides of exactly 5.08 centimeters.
+
+<h3 id="type-hexagon">Hexagon Sticker</h3>
+A <dfn>hexagon sticker</dfn> must be represented by a regular hexagon with the largest diagonals measuring exactly 5.08 centimeters.
+The sticker must be oriented with a vertex positioned at the top.
+
+<h2 id="acks" class="no-num">Acknowledgements</h2>
+
+The editor would like to thank
+Jason Denizac,
+Max Ogden
+for their contributions to this specification.
