@@ -7,4 +7,5 @@ This specification is also a definitive place to know what dimensions a sticker 
 The main spec is available at https://terinjokes.github.io/StickerConstructorSpec, generated from the `index.bs` file.
 
 ## See also
-- [hexb.in](http://hexb.in/) - community curated list for hexagon logos
+- [hexb.in](http://hexb.in/) - community curated list for hexagon logos.
+- [Vendors](https://github.com/terinjokes/StickerConstructorSpec/wiki/Vendors) - vendors suggested by the community that can print compliant stickers.
