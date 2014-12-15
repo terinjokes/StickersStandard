@@ -25,6 +25,10 @@ A <dfn>square sticker</dfn> must be represented by a square with sides of exactl
 A <dfn>hexagon sticker</dfn> must be represented by a regular hexagon with the largest diagonals measuring exactly 5.08 centimeters.
 The sticker must be oriented with a vertex positioned at the top.
 
+<h3 id="type-triangle">Triangle Sticker</h3>
+A <dfn>triangle sticker</dfn> must be represented by an equilateral triangle with sides of exactly 5.08 centimeters.
+The sticker must be oriented with a vertex positioned at the top.
+
 <h2 id="acks" class="no-num">Acknowledgements</h2>
 
 The editor would like to thank
