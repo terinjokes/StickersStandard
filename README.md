@@ -9,3 +9,9 @@ The main spec is available at https://terinjokes.github.io/StickerConstructorSpe
 ## See also
 - [hexb.in](http://hexb.in/) - community curated list for hexagon logos.
 - [Vendors](https://github.com/terinjokes/StickerConstructorSpec/wiki/Vendors) - vendors suggested by the community that can print compliant stickers.
+
+### On Non-conforming Stickers
+*This section is non-normative*
+
+When you exchange stickers, you may be given a sticker that does not conform to this specification.
+If this is the case, thank them for the time spent on designing and printing the sticker.
