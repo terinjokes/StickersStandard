@@ -25,6 +25,13 @@ A <dfn>square sticker</dfn> must be represented by a square with sides of exactl
 A <dfn>hexagon sticker</dfn> must be represented by a regular hexagon with the largest diagonals measuring exactly 5.08 centimeters.
 The sticker must be oriented with a vertex positioned at the top.
 
+<h2 id="non-conforming">On Non-conforming Stickers</h2>
+
+<em>This section is non-normative.</em>
+
+When you exchange stickers, you may be given a sticker that does not conform to this specification.
+If this is the case, thank them for the time spent on designing and printing the sticker.
+
 <h2 id="acks" class="no-num">Acknowledgements</h2>
 
 The editor would like to thank
