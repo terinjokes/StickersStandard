@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ebene_1" x="0px"
+  y="0px" width="198.425px" height="198.425px" viewBox="0 0 198.425 198.425"
+  enable-background="new 0 0 198.425 198.425" xml:space="preserve"
+  hola_ext_inject="disabled">
+
+  <polygon fill="#FFFFFF" points="39.425,133.768 39.425,64.658 99.425,30.097
+    159.425,64.658 159.425,133.768 99.425,168.328 "/>
+
+  <path fill="#050507"
+    d="M98.925,32.983l57.5,33.119v66.221l-57.5,33.119l-57.5-33.119V66.102L98.925,32.983z
+    M98.925,27.212   l-62.5,36v72.001l62.5,36l62.5-36V63.212L98.925,27.212z"/>
+</svg>
