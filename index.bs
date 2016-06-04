@@ -19,11 +19,15 @@ Abstract: A standard allow producers to supply tools that help ensure maximum co
 <h2 id="type">Types of Stickers</h2>
 
 <h3 id="type-square">Square Sticker</h3>
-A <dfn>square sticker</dfn> must be represented by a square with sides of exactly 5.08 centimeters.
+A <dfn>square sticker</dfn> must be represented by a square with sides that should measure 5.08 centimeters, and must remain within 1 millimeter tolerance.
+
+<div class="note">These tolerances allow for square stickers with sides that measure between 4.98 and 5.18 centimeters.</div>
 
 <h3 id="type-hexagon">Hexagon Sticker</h3>
-A <dfn>hexagon sticker</dfn> must be represented by a regular hexagon with the largest diagonals measuring exactly 5.08 centimeters.
+A <dfn>hexagon sticker</dfn> must be represented by a regular hexagon where the largest diagonals should measure 5.08 centimeters, and which must remain within 1 millimeter tolerance.
 The sticker must be oriented with a vertex positioned at the top.
+
+<div class="note">These tolerances allow for diagonals measuring between 4.98 and 5.18 centimeters.</div>
 
 <h2 id="non-conforming">On Non-conforming Stickers</h2>
 
