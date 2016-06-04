@@ -36,5 +36,7 @@ If this is the case, thank them for the time spent on designing and printing the
 
 The editor would like to thank
 Jason Denizac,
-Max Ogden
+Yoshua Wuyts,
+Máirín Duffy,
+and Max Ogden
 for their contributions to this specification.
