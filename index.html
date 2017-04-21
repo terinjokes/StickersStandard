@@ -34,6 +34,7 @@
  *   - .note       for informative notes             (div, p, span, aside, details)
  *   - .example    for informative examples          (div, p, pre, span)
  *   - .issue      for issues                        (div, p, span)
+ *   - .assertion  for assertions                    (div, p, span)
  *   - .advisement for loud normative statements     (div, p, strong)
  *   - .annoying-warning for spec obsoletion notices (div, aside, details)
  *
@@ -48,9 +49,9 @@
  *   - ::before styled for CSS-generated issue/example/figure numbers:
  *     -> Documents wishing to use this only need to add
  *        figcaption::before,
- *        .caption::before { content: "Figure "  counter(figure);  }
- *        .example::before { content: "Example " counter(example); }
- *        .issue::before   { content: "Issue "   counter(issue);   }
+ *        .caption::before { content: "Figure "  counter(figure) " ";  }
+ *        .example::before { content: "Example " counter(example) " "; }
+ *        .issue::before   { content: "Issue "   counter(issue) " ";   }
  *
  * Header Stuff (ignore, just don't conflict with these classes)
  *   - .head for the header
@@ -413,6 +414,19 @@
 	 border-left: 0.5em solid #DEF;
 	}
 
+	/* Put nice boxes around each algorithm. */
+	[data-algorithm]:not(.heading) {
+	  padding: .5em;
+	  border: thin solid #ddd; border-radius: .5em;
+	  margin: .5em calc(-0.5em - 1px);
+	}
+	[data-algorithm]:not(.heading) > :first-child {
+	  margin-top: 0;
+	}
+	[data-algorithm]:not(.heading) > :last-child {
+	  margin-bottom: 0;
+	}
+
 	/* Style for switch/case <dl>s */
 	dl.switch > dd > ol.only,
 	dl.switch > dd > .only > ol {
@@ -456,7 +470,7 @@
 		font-style: normal;
 	}
 	dt dfn code, code.idl {
-		font-size: inherit;
+		font-size: normal;
 	}
 	dfn var {
 		font-style: normal;
@@ -597,7 +611,7 @@
 /*                             Colored Boxes                                  */
 /******************************************************************************/
 
-	.issue, .note, .example, .advisement, blockquote {
+	.issue, .note, .example, .assertion, .advisement, blockquote {
 		padding: .5em;
 		border: .5em;
 		border-left-style: solid;
@@ -612,6 +626,7 @@
 	.note,
 	.example,
 	.advisement,
+	.assertion,
 	blockquote {
 		margin: 1em auto;
 	}
@@ -644,7 +659,7 @@
 		padding-right: 1em;
 		text-transform: uppercase;
 	}
-	/* Add .issue::before { content: "Issue " counter(issue); } for autogen numbers,
+	/* Add .issue::before { content: "Issue " counter(issue) " "; } for autogen numbers,
 	   or use class="marker" to mark up the issue number in source. */
 
 /** Example *******************************************************************/
@@ -662,7 +677,7 @@
 		min-width: 7.5em;
 		display: block;
 	}
-	/* Add .example::before { content: "Example " counter(example); } for autogen numbers,
+	/* Add .example::before { content: "Example " counter(example) " "; } for autogen numbers,
 	   or use class="marker" to mark up the example number in source. */
 
 /** Non-normative Note ********************************************************/
@@ -689,6 +704,14 @@
 	}
 	details.note[open] > summary {
 		border-bottom: 1px silver solid;
+	}
+
+/** Assertion Box *************************************************************/
+	/*  for assertions in algorithms */
+
+	.assertion {
+		border-color: #AAA;
+		background: #EEE;
 	}
 
 /** Advisement Box ************************************************************/
@@ -945,6 +968,8 @@ Possible extra rowspan handling
 		/* Reverse color scheme */
 		color: black;
 		border-color: #3980B5;
+		border-bottom-width: 3px !important;
+		margin-bottom: 0px !important;
 	}
 	.toc a:visited {
 		border-color: #054572;
@@ -1151,7 +1176,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed 1.0.0" name="generator">
+  <meta content="Bikeshed version a60ced33ed990d75e39d2ba357c10dd3c8679190" name="generator">
 <style>/* style-md-lists */
 
             /* This is a weird hack for me not yet following the commonmark spec
@@ -1185,11 +1210,11 @@ Possible extra rowspan handling
                 content: "Invalid Example" counter(example);
             }
 
-            figure {
+            figcaption {
                 counter-increment: figure;
             }
             figcaption:not(.no-marker)::before {
-                content: "Figure " counter(figure);
+                content: "Figure " counter(figure) " ";
             }</style>
 <style>/* style-selflinks */
 
@@ -1303,7 +1328,7 @@ Possible extra rowspan handling
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">Stickers Standard</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Standard, <time class="dt-updated" datetime="2016-06-04">4 June 2016</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Standard, <time class="dt-updated" datetime="2017-04-21">21 April 2017</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt class="editor">Editor:
@@ -1317,14 +1342,14 @@ Possible extra rowspan handling
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 4 June 2016,
+In addition, as of 21 April 2017,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
    <hr title="Separator for header">
   </div>
-  <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
   <div class="p-summary" data-fill-with="abstract">
+   <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
    <p>This specification defines a standard for sticker compatibility from multiple vendors.
 
 By following this specification, implementors can ensure they meet the expectations of sticker consumers.
@@ -1361,10 +1386,12 @@ A standard allow producers to supply tools that help ensure maximum compliance a
    <p><em>This section is non-normative.</em></p>
    <h2 class="heading settled" data-level="1" id="type"><span class="secno">1. </span><span class="content">Types of Stickers</span><a class="self-link" href="#type"></a></h2>
    <h3 class="heading settled" data-level="1.1" id="type-square"><span class="secno">1.1. </span><span class="content">Square Sticker</span><a class="self-link" href="#type-square"></a></h3>
-    A <dfn data-dfn-type="dfn" data-noexport="" id="square-sticker">square sticker<a class="self-link" href="#square-sticker"></a></dfn> must be represented by a square with sides of exactly 5.08 centimeters. 
+    A <dfn data-dfn-type="dfn" data-noexport="" id="square-sticker">square sticker<a class="self-link" href="#square-sticker"></a></dfn> must be represented by a square with sides that should measure 5.08 centimeters, and must remain within 1 millimeter tolerance. 
+   <div class="note" role="note">These tolerances allow for square stickers with sides that measure between 4.98 and 5.18 centimeters.</div>
    <h3 class="heading settled" data-level="1.2" id="type-hexagon"><span class="secno">1.2. </span><span class="content">Hexagon Sticker</span><a class="self-link" href="#type-hexagon"></a></h3>
-    A <dfn data-dfn-type="dfn" data-noexport="" id="hexagon-sticker">hexagon sticker<a class="self-link" href="#hexagon-sticker"></a></dfn> must be represented by a regular hexagon with the largest diagonals measuring exactly 5.08 centimeters.
+    A <dfn data-dfn-type="dfn" data-noexport="" id="hexagon-sticker">hexagon sticker<a class="self-link" href="#hexagon-sticker"></a></dfn> must be represented by a regular hexagon where the largest diagonals should measure 5.08 centimeters, and which must remain within 1 millimeter tolerance.
 The sticker must be oriented with a vertex positioned at the top. 
+   <div class="note" role="note">These tolerances allow for diagonals measuring between 4.98 and 5.18 centimeters.</div>
    <h2 class="heading settled" data-level="2" id="non-conforming"><span class="secno">2. </span><span class="content">On Non-conforming Stickers</span><a class="self-link" href="#non-conforming"></a></h2>
    <p><em>This section is non-normative.</em></p>
    <p>When you exchange stickers, you may be given a sticker that does not conform to this specification.
@@ -1389,7 +1416,7 @@ for their contributions to this specification.</p>
             except sections explicitly marked as non-normative, examples, and notes. <a data-link-type="biblio" href="#biblio-rfc2119">[RFC2119]</a> </p>
    <p> Examples in this specification are introduced with the words “for example”
             or are set apart from the normative text with <code>class="example"</code>, like this: </p>
-   <div class="example" id="example-ae2b6bc0"><a class="self-link" href="#example-ae2b6bc0"></a> This is an example of an informative example. </div>
+   <div class="example" id="example-example"><a class="self-link" href="#example-example"></a> This is an example of an informative example. </div>
    <p> Informative notes begin with the word “Note”
             and are set apart from the normative text with <code>class="note"</code>, like this: </p>
    <p class="note" role="note"> Note, this is an informative note. </p>
