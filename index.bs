@@ -8,8 +8,8 @@ Editor: Terin Stock, terin@terinstock.com, https://terinstock.com
 Abstract: This specification defines a standard for sticker compatibility from multiple vendors. 
 Abstract: By following this specification, implementors can ensure they meet the expectations of sticker consumers.
 Abstract: A standard allow producers to supply tools that help ensure maximum compliance and enjoyability.
-!Participate: <a href="https://github.com/terinjokes/StickerConstructorSpec/issues/new">File an issue</a> (<a href="https://github.com/terinjokes/StickerConstructorSpec/issues?state=open">open issues</a>)
-!Version History: <a href="https://github.com/terinjokes/StickerConstructorSpec/commits">https://github.com/terinjokes/StickerConstructorSpec/commits</a>
+!Participate: <a href="https://github.com/terinjokes/StickersStandard/issues/new">File an issue</a> (<a href="https://github.com/terinjokes/StickersStandard/issues?state=open">open issues</a>)
+!Version History: <a href="https://github.com/terinjokes/StickersStandard/commits">https://github.com/terinjokes/StickersStandard/commits</a>
 </pre>
 
 <h2 id="intro" class="no-num">Introduction</h2>
