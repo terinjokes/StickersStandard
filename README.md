@@ -17,5 +17,4 @@ The main spec is available at https://sticker.how/, generated from the `index.bs
 2 inch x 2 inch.
 
 ## See also
-- [hexb.in](http://hexb.in/) - community curated list for hexagon logos.
 - [Vendors](https://github.com/terinjokes/StickersStandard/wiki/Vendors) - vendors suggested by the community that can print compliant stickers.
