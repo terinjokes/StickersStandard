@@ -19,12 +19,12 @@ Abstract: A standard allows producers to supply tools that help ensure maximum c
 <h2 id="type">Types of Stickers</h2>
 
 <h3 id="type-square">Square Sticker</h3>
-A default <dfn>square sticker</dfn> must be represented by a square with sides that should measure 5.08 centimeters, and must remain within 1 millimeter tolerance.
+A default <dfn export>square sticker</dfn> must be represented by a square with sides that should measure 5.08 centimeters, and must remain within 1 millimeter tolerance.
 
 <div class="note">These tolerances allow for square stickers with sides that measure between 4.98 and 5.18 centimeters.</div>
 
 <h3 id="type-hexagon">Hexagon Sticker</h3>
-A default <dfn>hexagon sticker</dfn> must be represented by a regular hexagon where the largest diagonals should measure 5.08 centimeters, and which must remain within 1 millimeter tolerance.
+A default <dfn export>hexagon sticker</dfn> must be represented by a regular hexagon where the largest diagonals should measure 5.08 centimeters, and which must remain within 1 millimeter tolerance.
 The sticker must be oriented with a vertex positioned at the top.
 
 <div class="note">These tolerances allow for diagonals measuring between 4.98 and 5.18 centimeters.</div>
@@ -34,9 +34,9 @@ The sticker must be oriented with a vertex positioned at the top.
 Alternative size stickers must have integer multiples or submultiples of the dimensions defined in this standard. Stickers of these alternative sizes should use the following notation:
 
 - submultiples use an "nXS" affix, with n being a natural number higher than 1.
-  <p class="example">A sticker where the standard dimension(s) is halved (1⁄2×) is notated as "2XS". This sticker would have a surface area 1⁄4 of the surface area of the default size.</p>
+    <p class="example" id="submultiples-example">A sticker where the standard dimension(s) is halved (1⁄2×) is notated as "2XS". This sticker would have a surface area 1⁄4 of the surface area of the default size.</p>
 - multiples use an "nXL" affix, with n being a natural number higher than 1.
-  <p class="example">A sticker where the standard dimension(s) is thrice (3×) is notated as "3XL". This sticker would have a surface area 9 times the surface area of the default size.</p>
+    <p class="example" id="multiples-example">A sticker where the standard dimension(s) is thrice (3×) is notated as "3XL". This sticker would have a surface area 9 times the surface area of the default size.</p>
 
 <div class="note">Note that artwork designed for alternative dimensions should take into consideration the physical size of the resulting sticker, in particular for smaller sizes loss of detail is to be expected. Make sure that lines, dots and other fine aspects are scaled accordingly. Tolerances for stickers with larger sizes remain at 1 millimeter tolerance, while for smaller sizes tolerances are scaled down on a best effort basis.</div>
 
